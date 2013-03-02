@@ -1,0 +1,12 @@
+Detail hasil Apotek
+tabel Diagnosa
+kolom Diagnosa
+tabel item transaksi
+kolom jenis, item, jumlah, harga standar, harga satuan, satuan, kandungan, dosis, rekomendasi, total
+Hasil Dak
+tabel Diagnosa
+kolom Diagnosa
+tabel item transaksi
+kolom jenis, item, jumlah, harga standar, harga satuan, satuan, kandungan, dosis, rekomendasi, total
+
+Hasil 

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<querybuilder version="8.3">
+<source>
+<database charset="latin1" collation="latin1_swedish_ci">simkesbaru</database>
+</source>
+<canvas>
+<table tablename="transaksi" alias="" left="405" top="44" width="150" height="113" />
+<table tablename="master_tertanggung" alias="" left="227" top="22" width="150" height="113" />
+<table tablename="master_karyawan" alias="" left="70" top="29" width="150" height="113" />
+<table tablename="rayon_karyawan" alias="" left="30" top="169" width="150" height="113" />
+<table tablename="wilayah_karyawan" alias="" left="207" top="176" width="150" height="113" />
+<table tablename="mitra_karyawan" alias="" left="373" top="181" width="150" height="113" />
+<table tablename="transaksi_diagnosa" alias="" left="591" top="187" width="150" height="113" />
+<table tablename="master_diagnosa" alias="" left="760" top="173" width="150" height="113" />
+<table tablename="transaksi_rmh_sakit" alias="" left="617" top="24" width="150" height="113" />
+<table tablename="item_transaksi_rs" alias="" left="782" top="21" width="150" height="113" />
+<table tablename="master_dokter" alias="" left="942" top="32" width="150" height="113" />
+<join type = "Inner Join">
+<from tablename = "transaksi" alias = "">id_tertanggung</from>
+<to tablename = "master_tertanggung" alias = "">id_tertanggung</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "master_tertanggung" alias = "">id_karyawan</from>
+<to tablename = "master_karyawan" alias = "">id_karyawan</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "master_karyawan" alias = "">id_rayon</from>
+<to tablename = "rayon_karyawan" alias = "">id_rayon</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "rayon_karyawan" alias = "">id_wilayah</from>
+<to tablename = "wilayah_karyawan" alias = "">id_wilayah</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "wilayah_karyawan" alias = "">id_mitra</from>
+<to tablename = "mitra_karyawan" alias = "">id_mitra</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "transaksi_diagnosa" alias = "">id_transaksi</from>
+<to tablename = "transaksi" alias = "">id_transaksi</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "transaksi_diagnosa" alias = "">id_diagnosa</from>
+<to tablename = "master_diagnosa" alias = "">id_diagnosa</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "transaksi_rmh_sakit" alias = "">id_transaksi</from>
+<to tablename = "transaksi" alias = "">id_transaksi</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "item_transaksi_rs" alias = "">id_transaksi</from>
+<to tablename = "transaksi" alias = "">id_transaksi</to>
+</join>
+<join type = "Inner Join">
+<from tablename = "item_transaksi_rs" alias = "">id_dokter</from>
+<to tablename = "master_dokter" alias = "">id_dokter</to>
+</join>
+</canvas>
+<grid>
+<column id="1">
+<table tablename="transaksi"></table>
+<field>id_transaksi</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="2">
+<table tablename="transaksi"></table>
+<field>tgl_kunjungan</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="3">
+<table tablename="master_dokter"></table>
+<field>nama_dokter</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="4">
+<table tablename="master_karyawan"></table>
+<field>nip</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="5">
+<table tablename="master_karyawan"></table>
+<field>nama_karyawan</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="6">
+<table tablename="master_tertanggung"></table>
+<field>ditanggung</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="7">
+<table tablename="master_tertanggung"></table>
+<field>nama_tertanggung</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="8">
+<table tablename="master_tertanggung"></table>
+<field>status</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="9">
+<table tablename="master_diagnosa"></table>
+<field>nama_diagnosa</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="10">
+<table tablename="rayon_karyawan"></table>
+<field>id_rayon</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="11">
+<table tablename="wilayah_karyawan"></table>
+<field>id_wilayah</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="12">
+<table tablename="mitra_karyawan"></table>
+<field>id_mitra</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="13">
+<table tablename="transaksi_rmh_sakit"></table>
+<field>idjenis_rawat</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+<column id="14">
+<table tablename="master_karyawan"></table>
+<field>ap</field>
+<alias></alias>
+<show>true</show>
+<sortorder></sortorder>
+<sort></sort>
+<groupby>false</groupby>
+<aggfunct></aggfunct>
+<criteria></criteria>
+<or1></or1>
+<or2></or2>
+<or3></or3>
+<or4></or4>
+</column>
+</grid>
+</querybuilder>

@@ -1,0 +1,345 @@
+body{
+	font: 12px Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	background-image: none;
+	background-repeat: repeat-x;
+	background-position: top;
+	font-size: 75%;
+}
+html{font-size: 75%;}
+
+.ui-tabs-nav li {position: relative;}
+.ui-tabs-selected a span {padding-right: 10px;}
+.ui-tabs-close {display: none;position: absolute;top: 3px;right: 0px;z-index: 800;width: 16px;height: 14px;font-size: 10px; font-style: normal;cursor: pointer;}
+.ui-tabs-selected .ui-tabs-close {display: block;}
+.ui-layout-west .ui-jqgrid tr.jqgrow td { border-bottom: 0px none;}
+.ui-datepicker {z-index:1200;}
+
+
+#Content {
+	spadding: 2px;
+	overflow: auto;
+	margin: 10px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	background-repeat: repeat;
+	background-image: url(images/images.jpg);
+}
+
+#header {
+	height: 50px;
+}
+	
+#content {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	background-color: #FFF;
+	width: auto;
+}
+#menu_atas {
+	float: left;
+	margin-right: 100px;
+}
+
+#content #isi {
+	padding: 10px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: auto;
+	margin-top: 10px;
+	background-color: #CCC;
+}
+
+#content #login {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	height: 300px;
+	width: 200px;
+	background-color: #CF9;
+	position: static;
+	padding: 10px;
+	margin: auto;
+}
+#main {
+	width: auto;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+#footer #kanan p {
+	float: right;
+	font-size: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFF;
+}
+#main #footer #kiri {
+	float: left;
+	font-size: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFF;
+}
+
+
+
+#footer {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding: 5px;
+	margin-top: 3px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding: 5px;
+	margin-top: 3px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#clear {
+	clear: both;
+}
+
+
+
+
+
+ul.menu {list-style:none; margin:0; padding:0}
+ul.menu * {margin:0; padding:0}
+ul.menu a {
+	display:block;
+	color:#000;
+	text-decoration:none;
+	background-color: #3F0;
+}
+ul.menu li {position:relative; float:left; margin-right:2px}
+ul.menu ul {
+	position:absolute;
+	top:26px;
+	left:0;
+	display:none;
+	opacity:0;
+	list-style:none;
+	background-color: #33FF00;
+}
+ul.menu ul li {position:relative; border:1px solid #aaa; border-top:none; width:148px; margin:0}
+ul.menu ul li a {
+	display:block;
+	padding:3px 7px 5px;
+	background-color:#99FF99
+}
+ul.menu ul li a:hover {
+	background-color:#F0F0F0
+}
+ul.menu ul ul {left:148px; top:-1px}
+ul.menu .menulink {
+	border:2px solid #FFF;
+	font-weight:bold;
+	width:auto;
+	background-color: #093;
+	background-image: none;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px 10px 10px;
+	color: #FFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 5px;
+}
+ul.menu .menulink:hover, ul.menu .menuhover {
+	background-color: #9F3;
+	background-image: none;
+}
+ul.menu .sub {background:#d1d1d1 url(images/arrow.gif) 136px 8px no-repeat}
+ul.menu .topline {border-top:1px solid #aaa}
+#menu li ul li .sub {
+	background-color: #9F9;
+}
+
+ul.tabs {
+	list-style:none;
+	margin:0 !important;
+	padding:0;
+	height:30px;
+	text-decoration:none;
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	border-bottom-color: #666;
+}
+
+/* single tab */
+ul.tabs li {
+	text-decoration:none;
+	float:left;
+	text-indent:0;
+	padding:0;
+	margin:0 !important;
+	list-style-image:none !important;
+	font-size:11px;
+	display:block;
+	height: 30px;
+	line-height:30px;
+	width: 134px;
+	text-align:center;
+	color:#333;
+	padding:0px;
+	margin:0px;
+	position:relative;
+	top:1px;
+	background-color: #096;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: -420px 0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	border: thin solid #FFF;
+}
+
+/* link inside the tab. uses a background image */
+ul.tabs a { 
+	
+}
+
+ul.tabs a:active {
+	outline:none;		
+}
+
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {
+	background-position: -420px -31px;	
+	color:#fff;	
+}
+
+/* active tab uses a class name "current". it's highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	text-decoration:none;
+	background-position: -420px -62px;		
+	cursor:default !important; 
+	color:#000 !important;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+/* width 1 */
+ul.tabs a.s 			{ background-position: -553px 0; width:81px; }
+ul.tabs a.s:hover 	{ background-position: -553px -31px; }
+ul.tabs a.s.current  { background-position: -553px -62px; }
+
+/* width 2 */
+ul.tabs a.l 			{ background-position: -248px -0px; width:174px; }
+ul.tabs a.l:hover 	{ background-position: -248px -31px; }
+ul.tabs a.l.current  { background-position: -248px -62px; }
+
+/* width 3 */
+ul.tabs a.xl 			{ background-position: 0 -0px; width:248px; }
+ul.tabs a.xl:hover 	{ background-position: 0 -31px; }
+ul.tabs a.xl.current { background-position: 0 -62px; }
+
+/* initially all panes are hidden */ 
+div.panes div.pane {
+	display:none;		
+}
+
+/* tab pane styling */
+div.panes div {
+	display:none;
+	padding:15px 10px;
+	border:1px solid #999;
+	border-top:0;
+	height:100px;
+	font-size:14px;
+	background-color:#0FF;
+}
+
+/* end tab styling */
+
+body {
+	font-family:"Lucida Grande","Lucida Sans Unicode","bitstream vera sans","trebuchet ms",verdana;
+}
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+  outline:none;
+}
+:focus {
+  -moz-outline-style:none;
+}
+#wrapper div .tabs li .remove {
+	text-decoration: none;
+	width: auto;
+	margin-right: 10px;
+	clear: both;
+	float: right;
+}
+#wrapper div .tabs li .tab {
+	text-decoration: none;
+	
+}
+.content {
+	background-color: #CF3;
+	width: 800px;
+}
+#welcome {
+	font-size: 14px;
+	color: #000;
+	float: right;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#welcome1
+{
+	font-size: 16px;
+	color: #FFF;
+	float: right;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	padding-left: 10px;
+	padding-right: 10px;
+}
