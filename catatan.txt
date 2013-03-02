@@ -1,0 +1,63 @@
+id_wilayah master_kunjungan id_wilayah master_pemeriksaan
+id_rekomendasi cuma int1
+transaksi apotek tidak ada oral atau tidak
+tabel hasil periksa kunjungan foreigkey id_apotek tidak bisa ke primary_key master apotek
+tabel hasil periksa kunjungan foreigkey id_dokter tidak bisa ke primary_key master dokter
+
+tabel master_kunjungan foreignkey id_tertanggung tidak bisa ke primary_key master_tertanggung
+tabel master_kunjungan foreignkey id_dokter tidak bisa ke primary_key master_dokter
+tabel master_kunjungan foreignkey id_jenis tidak bisa ke primary_key jenis_kunjungan
+
+
+tabel master_pemeriksaan foreignkey id_kunjungan tidak bisa ke primary_key master_kunjungan
+
+
+tabel master_transaksi foreignkey id_kunjungan tidak bisa ke primary_key master_kunjungan
+tabel master_transaksi foreignkey id_jenis tidak bisa ke primary_key jenis_tagihan
+
+
+
+koreksi
+periksa dak belum jelas
+total di item transa
+
+
+struktur transasksi_diagnosa diubah
+
+
+hasil transaksi rumah sakit kurang buku besar
+
+buku besar belum digunakan semua
+
+kolom entri optik tidak sama dengan hasil optik di kolom rujukan
+
+di tabel transaksi dokter ada tarif satuan itu dari mana
+satuan di item transaksi dak untuk apa
+
+m_trans_apotek caridokter kok dikasih limit
+master_dosis jmldosis dikasi default nilai
+master_bukubesar foreignkeyx udah diganti cascadex
+dosis di transaksi tidak ada tapi di inputan kok ada???
+kandungan di transaksi tidak ada tapi di inputan kok ada???
+hasil optik dan hasil lab tidak ada rujukan jadi dilaporan rujukan jangan diselect
+dilaporan hasil optik tidak ada mata kanan, kiri
+hba penunjang tidak ada
+formularium ada di input document tapi tidak ada di form database dan transaksi
+transaksi rms sakit di form inputannya tidak ada rujukan tapi di input excelx ada???
+cara menghilangkan spasi dibelakang kata???? di id jenis tagihan
+format disetujui di form rmah skit isix harus ya atau tidak
+
+validasi format tanggal belum ada
+data rekomendasi tidak sesuai dengan database sehingga belum ada script untuk memasukkan ke database
+total tidak bisa dihitung karena ada item yang tidak masuk ke itemtransaksiapotek
+
+jumlah provider harus satu dalam 1 transaksi
+jenis item atau provider di transaksi dokter tidak jelas
+
+semua id_rayon di fitur impor masih default diisi 1 karena tidak ada diform importx
+hasilpenunjang masih ada kolom database yang belum diisi yaitu kesimpulan dan nilai
+NO RM DI KUNJUNGAN RS ADA DI LAPORAN HASIL TETAPI TIDAK ADA DI INPUTNYA
+item transaksi lab belum jelas
+impor rayon belum jadi
+status di master karyawan masih berupa angka
+
