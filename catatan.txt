@@ -60,4 +60,5 @@ NO RM DI KUNJUNGAN RS ADA DI LAPORAN HASIL TETAPI TIDAK ADA DI INPUTNYA
 item transaksi lab belum jelas
 impor rayon belum jadi
 status di master karyawan masih berupa angka
+bismillah
 
